@@ -1,0 +1,31 @@
+<div *ngIf="listing">
+  <a [routerLink]="['/listings']">Go Back</a>
+  <br>
+  <h2 class="page-header">{{listing.title}} <small>{{listing.city}}</small></h2>
+  <div class="row">
+    <div class="col-md-4">
+      <img style="width:100%" class="thumbnail" src="{{imageUrl}}">
+    </div>
+    <div class="col-md-8">
+      <ul class="list-group">
+        <li class="list-group-item">Owner: {{listing.owner}}</li>
+        <li class="list-group-item">Address: {{listing.address}}</li>
+        <li class="list-group-item">City: {{listing.city}}</li>
+        <li class="list-group-item">Room-Size: {{listing.room}}</li>
+        <li class="list-group-item">Total-Size: {{listing.total}}</li>
+        <li class="list-group-item">Bedrooms: {{listing.bedrooms}}</li>
+        <li class="list-group-item">Distance from University: {{listing.uni}}</li>
+        <li class="list-group-item">Description: {{listing.desc}}</li>
+        <li class="list-group-item">Transportation: {{listing.trans}}</li>
+        <li class="list-group-item">Owner: {{listing.owner}}</li>
+        <li class="list-group-item">Type: {{listing.type}}</li>
+        <li class="list-group-item">Rent(Monthly): {{listing.price}}</li>
+        <li class="list-group-item">Contact: {{listing.contact}}</li>
+        <li class="list-group-item">Email: {{listing.email}}</li>
+
+
+      </ul>
+    </div>
+
+  </div>
+</div>

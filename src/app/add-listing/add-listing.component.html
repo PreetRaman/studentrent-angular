@@ -1,0 +1,73 @@
+<a [routerLink]="['']">Back</a>
+<br />
+<h2 class="" style="margin-left:600px">Add Listing</h2>
+<div class="modal-dialog">
+  <form (submit)="onAddSubmit()">
+    <div class="form-group">
+      <label>Title</label>
+      <input class="form-control" type="text" [(ngModel)]="title" name="title" required>
+    </div>
+    <div class="form-group">
+      <label>Type</label>
+      <select class="form-control" type="text" [(ngModel)]="type" name="type" required>
+        <option value="flat">Flat</option>
+        <option value="flatshare">Flatshare</option>
+        <option value="student residence">Student Residence</option>
+        <option value="house">House</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Address</label>
+      <input class="form-control" type="text" [(ngModel)]="address" name="address" required>
+    </div>
+    <div class="form-group">
+      <label>City</label>
+      <input class="form-control" type="text" [(ngModel)]="city" name="city" required>
+    </div>
+    <div class="form-group">
+      <label>Room Size(sq M)</label>
+      <input class="form-control" type="number" [(ngModel)]="room" name="room" required min="1">
+    </div>
+    <div class="form-group">
+      <label>Total Size(sq M)</label>
+      <input class="form-control" type="number" [(ngModel)]="total" name="total" required min="1">
+    </div>
+    <div class="form-group">
+      <label>Bedrooms</label>
+      <input class="form-control" type="number" [(ngModel)]="bedrooms" name="bedrooms" required min="1">
+    </div>
+    <div class="form-group">
+      <label>Distance from University</label>
+      <input class="form-control" type="text" [(ngModel)]="uni" name="uni">
+    </div>
+    <div class="form-group">
+      <label>Description</label>
+      <input class="form-control" type="textarea" [(ngModel)]="desc" name="desc">
+    </div>
+    <div class="form-group">
+      <label>Transportation</label>
+      <input class="form-control" type="text" [(ngModel)]="trans" name="trans">
+    </div>
+    <div class="form-group">
+      <label>Rent(Monthly)</label>
+      <input class="form-control" type="text" [(ngModel)]="price" name="price" required>
+    </div>
+    <div class="form-group">
+      <label>Owner</label>
+      <input class="form-control" type="text" [(ngModel)]="owner" name="owner" required>
+    </div>
+    <div class="form-group">
+      <label>Contact</label>
+      <input class="form-control" type="text" [(ngModel)]="contact" name="contact" required>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input class="form-control" type="email" [(ngModel)]="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <input id="image" name="image" [(ngModel)]="image" type="file" >
+    </div>
+    <input type="submit" value="Add property" class="btn btn-success">
+  </form>
+
+</div>
